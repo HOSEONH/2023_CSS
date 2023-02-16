@@ -1,0 +1,9 @@
+.font-mono { font-family: CookieRun Black; }
+
+a { 
+    text-decoration: none;
+    text-decoration-line: underline; 
+    text-decoration-color: red;
+    text-decoration-style: wavy; 
+    text-decoration-thickness: 1px;
+}
