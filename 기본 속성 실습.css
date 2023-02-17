@@ -1,0 +1,30 @@
+.font-title {
+    font-family: fantasy;
+    text-shadow: 1px 2px 3px rgba(252, 249, 88, 0.5);
+}
+
+.list-box {
+    background-color: beige;
+    border: orange solid 2px;
+    width: 300px;
+} /* solid실선 */
+
+.list-deco { list-style-type: circle;}
+.list-deco a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+/*마우스가 올려졌을 때 모양 바뀜*/
+.list-deco a:hover {
+    font-style: italic;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.text-strong {
+    font-family: 궁서체;
+    color :green;
+    text-decoration-line: underline;
+    text-decoration-style: wavy;
+    text-decoration-color: red;
+}
