@@ -1,9 +1,6 @@
 h1 {
-<<<<<<< HEAD
     font-family: CookieRun;
-=======
     font-family: fantasy;
->>>>>>> b05c047cab7fb1f6c6118d9eb3a5e5f68c0cbda5
 }
 
 div {
@@ -32,14 +29,12 @@ a {
     text-decoration-color: red;
     text-decoration-style: wavy; 
     text-decoration-thickness: 2px;
-<<<<<<< HEAD
-=======
+
 }
 
 .font-mono {
     font-family: 궁서체;
     color: green;
->>>>>>> b05c047cab7fb1f6c6118d9eb3a5e5f68c0cbda5
 }
 
 .font-mono {

@@ -1,0 +1,13 @@
+.button {
+    background-color: orange;
+    border-radius : 20px ; /*둥글게*/
+    padding: 1%; /*여백 생성*/
+    text-decoration: none; /*밑줄 없앰*/
+    color: brown;
+    font-size: small;
+}
+
+.button:hover {
+    color: black;
+    background-color: red;
+}

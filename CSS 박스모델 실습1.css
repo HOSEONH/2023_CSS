@@ -1,0 +1,24 @@
+.title {
+    background-color: orange;
+    padding: 20px 0;
+    /* 앞의 값은 위아래, 0 */
+    text-align: center;
+}
+
+.list {
+    border: black 3px dashed;
+    border-radius: 30px 10px; /*둥글게*/
+    /* border-radius: 20px; */
+    padding: 10px 20px; /* 0일때는 단위를 적지 않아도 되지만*/
+}
+
+/* p태그 여백
+1.padding - 안쪽에 있는 context의 공간을 고정해서 작성해줄 때(안쪽 내용 고정)
+2.margin - 개개인 이동 */
+
+/* 부모를 먼저 찾아준다 */
+/* 자식들에게만 style을 줄 수도 있다 */
+.list p {
+    background-color: beige;
+    padding: 5px 10px;
+}
