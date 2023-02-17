@@ -1,9 +1,36 @@
-.font-mono { font-family: CookieRun Black; }
+h1 {
+    font-family: fantasy;
+}
 
-a { 
+div {
+    width : 250px;
+    height: 100px;
+    background-color: #ecffc2;
+    border: 2px solid darkgreen;
+}
+
+.list-mark {
+    list-style-type: circle;
+}
+
+a {
     text-decoration: none;
+    color: black;
+}
+
+.link a:hover {
+    font-style: italic;
+    text-shadow: 0.5px 1px black;
+}
+
+.text-deco {
     text-decoration-line: underline; 
     text-decoration-color: red;
     text-decoration-style: wavy; 
-    text-decoration-thickness: 1px;
+    text-decoration-thickness: 2px;
+}
+
+.font-mono {
+    font-family: 궁서체;
+    color: green;
 }
