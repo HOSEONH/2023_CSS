@@ -23,3 +23,44 @@
     opacity: 25%;
     background-color: yellow;
 }
+
+/*html34*/
+.box {
+/*    display: inline-block; */
+    width: 150px;
+    height: 150px;
+    background-color: burlywood;
+}/*div눈으로 확인하기 위해*/
+
+.position-s {
+    position: static;
+    /*정적위치에서는 이동할 수 없다*/
+    left: 30px;
+}
+
+.position-r {
+    /*상대위치를 쓰겠다 알림*/
+    position: relative;
+    left: 30px;
+    top: 30px;
+}
+/*relative로 이동하게 되면 static으로 출력된*/
+
+/*html47*/
+.box-parent {
+    height: 300px;
+}
+
+/*html60*/
+.position-f {
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+
+/*html66*/
+.position-a {
+    position: absolute;
+    top: 250px;
+    left: 150px;
+}

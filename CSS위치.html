@@ -31,5 +31,49 @@
     <p class="none">없앰</p> <!--스크롤이 안된다-->
 
     <h2 class="opacity">opacity투명도</h2>
+
+    <h2>포지션 - position</h2>
+    <div class="position-s box">
+        정적위치 포지션
+    </div><!--크기와 색상 넣을 것-->
+    <div class="position-r box">
+        상대위치 포지션
+    </div><!--크기와 색상 넣을 것-->
+    <!-- inline이기 때문에 옆으로 연달아서 나옴 -->
+    <p>
+        relation속성은 정적위치에 상대적으로 요소를 움직일 수 있다 <br>
+        부모의 위치를 기준으로 상대적으로 움직인다고 이야기할 수 있다
+    </p>
+    <div class="box-parent">
+        <div class="position-r box">
+            상대위치 포지션
+        </div> <!--범위를 벗어난다-->
+    </div>
+    <p>
+        relative를 사용할 때 바로 사용을 하게 되면
+        원래 정적위치에서 사용한 공간만 자리를 차지하고
+        이동한 공간은 다른 태그가 그대로 있게 된다 <br>
+        *부모로 사용할 공간을 지정하고
+        자식태그로 relative를 사용하여 이동한다
+    </p>
+
+    <div class="box position-f">
+        고정위치
+        <p>브라우저 화면상에서 고정된 위치에 나온다</p>
+    </div>
+    <p>고정위치는 정적위치를 사용하지 않는다</p>
+
+    <div class="box position-a">
+        절대위치
+    </div>
+    <div class="box-parent">
+        <div class="box position-a"
+        style="height:100px;
+            background-color: yellow;">
+            절대위치
+            <p>부모에 구애받지 않고 전체 화면에서 이동</p>
+        </div>
+    </div><!--공간이 생김(상대위치 만들 때 만들어둠)-->
+
 </body>
 </html>
