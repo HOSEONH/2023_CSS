@@ -108,3 +108,9 @@ body에서 글자의 크기로 출력해서 보여지게 됨 */
     padding: 2px;
     border: solid 1px black;
 }
+
+.outline {
+    outline-style: solid;
+    outline-width: 3px;
+    outline-color: thistle;
+}
