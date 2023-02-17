@@ -1,0 +1,28 @@
+.my-box {
+    text-align: center;
+    background-color: coral;
+    width: 30rem;
+    margin-left: 2%;
+    margin-right: 10%;
+}
+
+.my-p {
+    padding: 2px;
+}
+
+p {
+    background-color: beige;
+    padding: 6px;
+}
+
+.my-m {
+    margin-top: 1%;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+.box {
+    width: 30rem;
+    border: dashed 3px black;
+    Border-radius:20px 20px
+}

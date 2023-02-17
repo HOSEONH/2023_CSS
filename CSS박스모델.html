@@ -30,7 +30,7 @@
         em의 단위의 경우 부모태그에 em을 사용하고 자식에게
         em을 사용했을 경우, 자식태그는 100% 크기의 기준을
         부모의 값으로 삼는다. <br>
-        부모 : 3em, 자식 : 2em 일 경우 자식의 크기는 600%
+        부모 : 3em, 자식 : 2em 일 경우 자식의 크기는 600% (기존 크기의 6배)
         3을 기준으로해서 2을 키운다
     </p>
     
@@ -99,7 +99,7 @@
         margin auto는 실행되지 않는다
     </p>
     <div class="box-parent">
-        <a href="" class="my-m-auto">자동 마진입니다</a>
+        <a href="my-m-auto">자동 마진입니다</a>
     </div> <!-- ? -->
 
     <!-- html요소의 높이와 너비 구하기 -->
@@ -122,5 +122,16 @@
         크기값이 중요한 경우에는 border-box로 바꿔서 작성 <br>
         크기 계산이 편하기 때문
     </p>
+
+    <h2>마진값-auto</h2>
+    <div class="my-border my-m-auto"
+    style="width: 300px;">margin 속성값 auto</div> 
+    <!--중앙으로 정렬되고 마진값이 자동으로 설정 되어짐-->
+    <p>
+        margin 속성값 auto 값을 사용해줄 때는
+        display가 block속성(div), content크기가 부모보다 작아야 한다
+        (부모크기와 같으면 margin이 들어갈 공간이 없다) <br>
+        margin - auto를 사용하면 부모의 크기 기준으로 중앙으로 정렬된다
+    </p> <!-- margin-auto : div태그를 사용할 때 많이 사용한다 -->
 </body>
 </html>

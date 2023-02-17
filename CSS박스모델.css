@@ -98,7 +98,7 @@ body에서 글자의 크기로 출력해서 보여지게 됨 */
 /* inherit속성값 : inherit - 부모(parent) 요소의 margin 속성값 받아옴 */
 .my-m-auto {margin: 0 auto} /* ? */
 
-.box-parent {width: 400%;}/* ? */
+.box-parent {width: 600px;}
 
 /*html118*/
 .box-layout {
