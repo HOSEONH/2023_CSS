@@ -61,6 +61,57 @@ tr:nth-child(2n) {
 .table-color {
     border-collapse: collapse;
 }
-.table-color> {
+/*자손이므로 tbody 무시*/
+.table-color tr:first-child{
     background-color: yellow;
+}
+/*자식이므로 tbody*/
+.table-color>tbody>tr:last-child {
+    background-color: aqua;
+}
+
+/*위의 선택자 중 하나를 이용해서 짝수색만 바꾸기*/
+.table-color /*>tbody>*/ tr:nth-child(2n) {
+    background-color: fuchsia;
+}
+
+.child-tag>p:first-child {
+    color: blue;
+}
+.child-tag>h1 {
+    color:brown
+}
+
+/*클래스를 지정하고 자손으로 타입찾기*/
+.of-type p:first-of-type {
+    color: red;
+}
+/*of-type*/
+
+/*first-child와 동일한 역할*/
+.of-type>p:first-of-type {
+    color: bisque;
+}
+
+
+.box-one { 
+    border: 2px solid red;
+}
+.box-one a {
+    color: blue;
+    text-decoration: none;
+    padding: 10%;
+}
+
+.box-two>ul {
+    list-style: none;
+}
+
+.box-two li {
+    float: left;
+    margin-left: 100px;
+    padding: 1%;
+    border-radius: 30%;
+    background-color: blue;
+    color: white;
 }
