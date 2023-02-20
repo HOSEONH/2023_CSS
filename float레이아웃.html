@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./float레이아웃.css">
+</head>
+<body>
+    <h1>float를 이용한 레이아웃</h1>
+    <img class="float-left"
+    src="./img/pencil.png" alt="연필">
+    <p>연필입니다</p>
+    <p>floct를 이용하여 영향을 받는 태그입니다</p>
+    <p>
+        float 속성의 특징 <br>
+        주변태그들이 속성이 들어간 태그와 어울리도록
+        위치가 바뀐다. <br>
+        float:left를 넣었을 때, 들어간 요소는 왼쪽 <br>
+        어울리는 요소는 오른쪽에 배치가 된다
+    <!--블록속성을 가로 정렬하기 위해 사용되는 기법 -->
+    </p>
+    <p class="float-clear">영향을 받지 않는 태그입니다</p>
+    <p>
+        float는 형제태그에 영향을 주기 때문에
+        그 영향에서 벗어나기 위해서는 clear:both를 사용한다
+    </p>
+    <hr>
+    <h2>div/의미태그와 float를 이용한 레이아웃</h2>
+    <header class="header">제목작성</header>
+    <nav class="nav">네브 링크 작성</nav>
+    <main class="main">
+        <section class="section1">내용1</section>
+        <section class="section2">내용2</section>
+        <p>
+            float로 레이아웃 작성 <br>
+            float속성이 들어가는 요소에만 width크기 지정 <br>
+            주변 요소의 크기는 자동으로 들어감.
+            주변 요소의 간격을 띄울때는 margin을 사용한다
+        </p>
+    </main>
+    <footer>푸터입니다</footer>
+    <hr>
+    <h2>레이아웃 잡기</h2>
+    <div class="div-border">
+        <header class="header-border">
+            <h1>header 영역</h1>
+        </header>
+        <nav class="nav-border">
+            <h1>nav영역</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat fuga porro autem impedit deleniti, delectus exercitationem a quam debitis consequuntur nisi modi voluptatum repudiandae ullam placeat minus sapiente soluta suscipit?</p>
+        </nav>
+        <section class="section-border">
+            <h1>section 영역</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus ut, consequuntur quam est asperiores sequi dolore temporibus tempore quaerat repellendus veritatis. Laborum, voluptatem dignissimos! Officia, accusantium? Enim accusantium veritatis minus!</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda, deleniti libero? Iste nostrum accusamus, quasi quae, soluta maiores veritatis deleniti nesciunt ipsam assumenda corporis suscipit exercitationem odio natus repellat quibusdam.</p>
+        </section>
+        <footer class="footer-border">
+            <h1>footer 영역</h1>
+        </footer>
+    </div>
+    <hr>
+    <div>
+        <header class="header-border-two">
+            <h1 class="h1">header 영역</h1>
+        </header>
+        <nav class="nav-border-two">
+            <h1 class="h1">nav영역</h1>
+            <p>여기에는 보통 메뉴가 들어갑니다</p>
+        </nav>
+        <section class="section-border-two">
+            <h1 class="h1">section 영역</h1>
+            <p>페이지에 해당하는 내용이 들어갑니다</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi debitis voluptate quam, necessitatibus deleniti cumque veniam, nam, doloremque beatae unde officia amet dolorem officiis quo reiciendis ipsam? Unde, doloribus saepe.</p>
+        </section>
+        <footer class="footer-border-two">
+            <h1 class="h1">footer 영역</h1>
+        </footer>
+    </div>
+    <hr>
+    <img class="float-left" src="./img/cat-g4225ae972_640.jpg" width="150" alt="">
+    <img class="float-right" src="./img/pencil.png" width="150" alt="">
+    <a href="">인라인태그</a>
+    <p>오른쪽으로 정렬할 수 있다</p>
+    <p class="float-clear">
+        float를 이용하여 오른쪽 왼쪽을 고정해서 사용할 수도 있다
+    </p>
+    <hr>
+
+    <h1>정렬하는 방법</h1>
+    <div class="align-margin"> 블록 타입 정렬 </div>
+    <div class="align-position"> 포지션 정렬 </div>
+
+    <h1>이미지와 함게 쓰는 float</h1>
+    <div class="container">
+        <img class="float-left" src="./img/pencil.png" width="150" alt="">
+        <p>연필입니다</p>
+    </div>
+    <p>
+        float와 div컨테이너를 사용할 때,
+        "이미지"를 함께 사용한다면 overflow:auto를 사용해서
+        내용을 다 감쌀 수 있도록 할 수 있다 <br>
+        
+    </p>
+</body>
+</html>

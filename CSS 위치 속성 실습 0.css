@@ -1,0 +1,15 @@
+.a {
+    border: 2px solid #B8860B;
+    background-color: bisque;
+    position: fixed;
+    width: 200px; height: 200px;
+    top: 0;
+    right: 0;
+}
+
+.center {
+    text-align: center;
+    text-decoration: none;
+}
+
+.center:hover { color: white; }

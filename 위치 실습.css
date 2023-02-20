@@ -1,0 +1,47 @@
+.bookmark {
+    background-color: burlywood;
+    border: black 5px solid; /*얼마만큼 차지하는지 확인*/
+    width: 170px;
+    padding: 0 10px; /*안쪽 공간 주기*/
+    position: fixed; /*오른쪽 상단에 고정*/
+    top: 0;
+    right: 0;
+}
+
+.bookmark ul {
+    list-style: none;
+}
+.bookmark ul a {
+    text-decoration: none;
+    color: black;
+}
+.bookmark ul a:hover {
+    color: white;
+}
+
+.box {
+    background-color: yellow;
+    overflow: auto;
+    height: 100px;
+}
+
+.box ul li {
+    padding: 20px;
+    list-style: none;
+    background-color: darkgreen;
+    float: left;
+}
+/*html53*/
+/*ul태그와 class리스트가 함께 있을 때
+태그 중에서도 list라는 틀래스이름을 가지고 있는 것만 */
+ul.list {
+    overflow: auto;
+    padding: 20px;
+    list-style: none;
+    background-color: yellow;
+}
+ul.list li {
+    float: left;/*옆으로 나오게*/
+    background-color: green;    
+    padding: 5px 10px;
+}
