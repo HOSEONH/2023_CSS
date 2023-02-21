@@ -1,0 +1,14 @@
+.after>p::after {
+    content: "N"; 
+    text-align: center; /*N글자를 가운데정렬*/
+    font-weight: 550; /*폰트 굵기*/
+    background-color: orange;
+    color: #ffffff;
+    display: inline-block; /*inline이면서 크기 조절이 가능*/
+    width: 20px;
+    border-radius: 50%; /*둥글게*/
+}
+
+p {
+    margin: 1%;
+}

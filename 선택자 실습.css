@@ -1,0 +1,54 @@
+ul {
+    list-style: none; /*li앞에 붙은 마크를 없앤다*/
+} /*태그에 직접적으로 쓸 때는 더 이상 건들지 않겠다 확정됐을 때*/
+
+.dictionary {
+    border: salmon 3px solid;
+}
+.dictionary>ul>li>a {
+    text-decoration: none; /*밑줄 없앰*/
+    color: black;
+}
+/* 자손을 통해서 바로 접근/ 자식을 통해서 ul-li로 */
+
+
+/* 태그가 block 속성일 때 float속성으로 정렬*/
+.hashtag>ul>li{
+    /*가로정렬(float, li->span,display=인라인 블록으로/스판 태그의 속성을 바꿔서), 색상변경 */   
+    float: right; /*가장 위에 있는 것이 오른쪽으로 가게됨, 순서가 변경됨 유의*/
+    background-color: blue;
+    color: white;
+    /*공간띄어주기-요소 사이 간격, 공간 크기 넓히기*/
+    margin: 0 5px; /*요소 사이 간격*/
+    padding: 5px 10px; /*공간 사이*/
+    border-radius: 20px; /*테두리 둥글게*/ /* %로 하게 되면 원형으로 나오게 됨*/
+} 
+
+.hashtag-inline {
+    clear: both;
+}
+
+.hashtag-inline>span {
+    position: relative;
+    left: 55%;
+    background-color: blue;
+    color: white;
+    margin: 0 5px;
+    padding: 5px 10px; 
+    border-radius: 20px;
+    display: inline-block;
+}
+
+.notice>ul>li {margin: 5px 5px;}
+.notice>ul>li::after {
+    content: "N";
+    color: #ffffff;
+    background-color: #ffd117;
+    border-radius: 50%;
+    /*padding: 3px 6px;*/
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    margin-left: 5px;
+}
