@@ -1,0 +1,39 @@
+.flex-box {
+    height: 100px; /*높이 배열*/
+    display: flex;
+    justify-content: space-around; /*메뉴들을 나열할 때 주로 사용*/
+    /*flex-direction: column;*/ /*세로로 출력*/ /*방향 틀어줌 기본적으로 row*/
+} /*위에서 아래로 나열되어 있었던 것들이 옆으로 붙었다 . 안에 있는 글자를 기준으로 해서 */
+
+
+/*높이가 있는 flexbox*/
+.flex-box-height {
+    display: flex;
+    height: 150px;
+    background-color: burlywood;
+    justify-content: space-between; /*수평*/
+    align-items: center; /*높이의 가운데 지정*/
+} /*div공간에 높이를 지정해주면 원하는 위치로 이동이 가능하다 */
+
+.flex-box-height>p {
+    /*width: 55px;*/ /*임의로 지정해준 크기만큼 늘어난다*/
+    padding: 5px;
+    background-color: aliceblue;
+} /*p는 블록이지만 flex안에 들어가게 되면*/ 
+
+.flex-box-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly; /*아래로 내려가는 내용들도 공간이 띄워진채로 정렬되어짐 */
+} /*들어가지 못하는 부분은 다음으로 넘어감 넘겨줌 */
+/*다음줄로 공간이 부족할 때는 wrap을 사용해주면 된다*/
+
+.flex-box-height-wrap {
+    display: flex;
+    min-height: 150px;
+    background-color: burlywood;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-around;
+} /*높이가 있을 때는 align 
+높이가 없을 때는 자동정렬되어 위치 변경 불가능*/
