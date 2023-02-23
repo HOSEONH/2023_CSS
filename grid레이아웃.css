@@ -1,0 +1,123 @@
+.grid-box {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px; /*간격을 띄었지만 요새는 쓰지 않음*/
+    /*각각의 공간을 만들어주는 속성있음*/
+} /*1fr이 3번 반복? repeat(3, 1fr);
+1fr 1fr 1fr ;
+1fr 1fr '1fr' 이 부분을 바꿨을 때 동일한 비율로 간격이 달라짐
+100px 1fr 2fr; 100px의 공간을 가진다*/
+/*repeat(3, 1fr); 처럼 딱 떨어지지 않을 때 정할 수 있는 속성이 있다
+row를 기준으로 나눌 수도 있다*/
+
+.grid-box>p:first-child {background-color: peachpuff;}
+.grid-box>p {
+    background-color: powderblue;
+} /*flex와는 다르게 grid를 통해서 만든 각각의 공간에 p태그가 차지하는 공간은 주어진 공간의 전체를 차지함
+flex는 inline으로 자신이 차지하는 만큼만 가졌지만
+grid는 block으로 grid안쪽만 차지 
+magin을 통한 띄어진 값*/
+
+.grid-box-row {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /*밑으로만 쭉 나열되어 버렸던 문제 해결 위한*/
+    /*row을 작성할 때는 높이간격을 따로 주고 싶을 때 작성*/
+    grid-template-rows: 1fr 1fr 2fr;/*3번째 row의 공간이 커진 것을 볼 수 있다 크기지정하고 싶을 때는 frame을 통해 추가적으로 더 작성이 가능하다*/ /*repeat(3, 1fr);*/ /*밑으로만 쭉 나열되어 버렸다*/
+} 
+/*아이템1에 마진값 혹은 패딩값이 커졌을 때는*/
+.grid-box-row>p:first-child {
+    padding: 30px 0;
+}
+
+/*기본적으로는 한칸을 차지하지만
+grid column 공간을 지정 가능 */
+
+
+
+.grid-box-item {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /*
+    template : 갯수만큼 크기지정(그 외의 크기는 auto)
+    auto : 모든 row의 오토를 어떻게 할지 지정
+    */
+    grid-auto-rows: 1fr; /*셀의 간격을 똑같이 주고 싶다면 셀의 크기를 확인하기 편하다*/
+}
+.grid-box-item>p:nth-child(1) {
+    grid-column: 1/4; /*한칸이 1부터 4까지 다 차지하였다*/
+    border: 2px solid salmon; /*확인*/
+}
+.grid-box-item>p:nth-child(2) {
+    grid-row: 2/4; /*2부터 4까지 차지하겠다*/ /*아이템5는 옆으로 밀려남*/
+    border: 2px solid saddlebrown; /*얼마만큼의 공간을 차지하는지 확인하기 위함*/
+}
+.grid-box-item>p:nth-child(3) {
+    grid-row: 2/4;
+    grid-column: 2/4;
+    border: solid 2px blue;
+}
+
+.grid-box-item>p:nth-child(4) {
+    grid-column: 2/4;
+    border: 2px solid slateblue;
+}
+.grid-box-item>p:nth-child(5) {
+    grid-column: 1;
+    grid-row: 4;
+    border: 2px solid orange;
+} /*임의로 지정을 하게 되면 그 공간으로 올라오게 된다*/
+
+.grid-box-one {
+    display: grid;
+    grid-template-columns: repeat(3, 3fr);
+    grid-auto-rows: 1fr;
+}
+
+/*
+.grid-box-contain {
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(3, 3fr);
+    grid-auto-rows: 1fr;
+}
+.item-image {
+    width: 100px; height: 140px;
+    background-image: url(./img/화면\ 캡처\ 2023-02-23\ 130938.png);
+}
+
+.item-image>h4, p {
+    text-align: center;
+    margin-top: 0;
+}
+
+.item-image>h4 {
+    text-align: center;
+    margin-top: 0;
+}*/
+
+/*grid 실습 확인*/
+*{
+    margin: 0;
+    padding: 0;
+}
+.grid-box-contain {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+}
+.grid-box-contain>.content {}
+.grid-box-contain>.content>.item-image {
+    background-image: url(./img/cat3.jpg);
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+}
+.grid-box-contain>.content>h4,
+.grid-box-contain>.content>p {
+    margin: 0; padding: 0;
+}
+.grid-box-contain>.content:hover>.item-image {
+    /*hover>.item-image hover가 됐을 때 바뀔 요소*/
+    filter: brightness(50%);
+    transition: all 0.5s;
+} /*레이아웃이 흔들리지 않고 */

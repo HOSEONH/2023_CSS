@@ -174,7 +174,7 @@ input[type="checkbox"]+span {
 .content-container>.black { /*클릭하기전*/
     position: absolute;
     color: white;
-    box-sizing: border-box;    
+    box-sizing: border-box;
     text-align: center;
     padding-top: 130px;
     width: 300px;
@@ -256,7 +256,7 @@ input[type="checkbox"]+span {
     height: 150px;
     padding-top: 50px;
     text-align: center;
-    z-index: 10; /*화면 위로 올려줌!*/
+    z-index: 10; /*화면 위로 올려줌!위아래 위치 옮기기 수정 가능*/
 }
 
 /*이미지 필터효과*/
