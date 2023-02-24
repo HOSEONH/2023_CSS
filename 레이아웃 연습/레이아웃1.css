@@ -1,0 +1,60 @@
+body {margin: 0; padding: 0;} /*뜨는 공간인 margin부분 없애고 화면에 꽉 채울때 */
+
+/* 감싸고 있는 WRAP 전체 너비 정해주기 */
+.wrap {
+    width: 1000px;
+    background-color: #528d52;
+    margin: auto; /* 양쪽에 뜨는 공간 가운데 정렬 */
+    font-size: 2rem; /* 전체 폰트 사이즈 변경해줘야지 */
+    text-align: center; /* 전체 중앙정렬 */
+}
+
+/* 안의 내용 크기잡기 */
+/* header */
+.header {
+    width: 1000px; height: 200px;
+    background-color: #83ec83c0;
+    font-size: 4rem; /* header폰트만 키워야지*//*폰트크기 4로 그대로 / 1 전체적내용이, 2 세부적인 상항 안쪽 클래스에 적용하면 부분들만 선택해서 수정이 가능 */
+    /* 텍스트 줄간격 조정해서 글자 위치 수정 */
+    line-height: 200px; /* 줄 사이 간격 */
+}
+/* nav */
+.nav {
+    height: 100px;
+    /* 태그를 넣어서 정렬할 때 - padding 사용 */
+    /* nav의 크기가 지정되어 있을 때 계산편의를 위함 */
+    box-sizing: border-box;
+    /* 안에 들어간 태그들이 flex라면 사용할 필요 없다 */ /*왜요?*/
+    padding: 20px 0;
+    background-color: #afffaf;
+}
+
+/* main-float 의 내용 */
+.main-float {overflow: auto;} /* 2 전체만큼 */
+.main-float>.aside { /* 그 안에 자식으로 있는 >.aside */
+    float: left; /* aside에 left를 주어서 content가 영향받도록 */
+    width: 300px; height: 500px; /* 1 wrap을 뚫고 나왔다 */
+    background-color: #b0ec7f;
+}
+.main-float>.content {
+    margin-left: 300px; /* 글자는 바로 옆에 들어가지만, 전체 컨텐츠의 크기는 글자만 이동 백그라운드색은 이동하지 않기 때문에 값 줘서 이동 */
+    height: 500px;
+    background-color: #98dbae;
+}
+
+/* main-grid 의 내용 */
+.main-grid {
+    /* float를 사용하였다면 clear를 통해 속성제거-영향받지 않도록 */
+    clear: both;
+    /* grid */
+    display: grid; /* 처음에는 일렬로 나옴 */
+    grid-template-columns: 300px 700px; /* 여러줄로 나오게 하려면! */ /* 고정된 값이기 때문에 px단위로 일단 작성 */
+    height: 500px; /* grid자체에 높이 */
+}
+.main-grid>.aside {background-color: #dbffc6;}
+.main-grid>.content {background-color: #94c48e;}
+
+/* footer */
+.footer {
+    height: 80px;
+}

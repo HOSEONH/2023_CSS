@@ -100,5 +100,5 @@ position: absolute;*/
 
 .container {
     background-color: yellow;
-    overflow: auto;
+    overflow: auto; /*커진 이미지를 인식할 수 있도록*/
 }

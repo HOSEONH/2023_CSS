@@ -9,6 +9,8 @@
 100px 1fr 2fr; 100px의 공간을 가진다*/
 /*repeat(3, 1fr); 처럼 딱 떨어지지 않을 때 정할 수 있는 속성이 있다
 row를 기준으로 나눌 수도 있다*/
+/*grid는 갯수 필수*/
+/*gird를 사용할 때는 justify-items: 는 nomal로 그대로 두고 사용해도 무방*/
 
 .grid-box>p:first-child {background-color: peachpuff;}
 .grid-box>p {
