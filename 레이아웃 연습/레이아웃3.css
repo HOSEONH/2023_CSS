@@ -1,0 +1,29 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.wrap {
+    width: 1000px;
+    background-color: #ac8ec9;
+    font-size: 2rem;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.header {
+    grid-column: 2/5;
+    background-color: #f4e9ff;
+}
+
+
+.main-grid>.aside {
+    grid-row: 1/4;
+    background-color: #3a076d;
+}
+.footer {
+    grid-column: 1/5;
+    background-color: #f4e9ff;
+}
+

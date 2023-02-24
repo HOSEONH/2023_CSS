@@ -1,0 +1,61 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+.wrap {
+    width: 1000px;
+    margin: auto;
+    background-color: #d8b1fc;
+    font-size: 2rem;
+    overflow: auto;
+}
+
+/* float와 margin사용 */
+/* 하나의 크기가 고정되고 나머지가 유동적일 때 사용 */
+.wrap>.aside {
+    float: left;
+    width: 300px; height: 500px;
+    background-color: rgb(219, 202, 235);
+}
+
+.wrap>.main {
+    margin-left: 300px;
+    background-color: aliceblue;
+    height: 500px;
+}
+
+.wrap>.main>.header {
+    height: 100px;
+    background-color: #f9d0fd;
+}
+
+.wrap>.main>.content {
+    height: 300px;
+    background-color: #ffd8fc;
+}
+
+.wrap>.main>.footer {
+    height: 120px; /*넘기면 스크롤 생기는데 marginauto에 overflow넘치면 이렇게 된다 */
+    background-color: #e9c4ff;
+}
+
+/* wrap - grid */
+.wrap-grid {
+    width: 1000px; margin: auto;
+    display: grid;
+    grid-template-columns: 300px 700px; /* 공간이 나눠짐! */
+}
+
+
+
+
+/* 두 개의 내용에 각각 float를 사용해서 크기를 고정 */
+/* float 두번째 사용방법 */
+.wrap-float2>.aside {
+    float : left;
+    width: 300px; height: 500px;
+}
+.wrap-float2>.main {
+    float: left;
+    width: 700px;
+}

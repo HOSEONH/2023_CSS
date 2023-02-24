@@ -1,0 +1,30 @@
+body {
+    padding: 0; margin: 0;
+}
+.header {
+    background-color: aquamarine;
+    width: 100%; /*너비 값 맞춰줌*/
+    padding: 5px;
+    position: fixed; /*고정. 되지만 너비값이 달라짐*/ /* header가 fixed되면서 content1글자가 사라짐
+    고정네비게이션을 사용할 때는 고정되어 출력이 되기 때문에 
+    윗부분을 padding을 걸어준 뒤 아래부분부터 작성하도록 한다*/
+}
+.header>.nav>ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+    padding: 0;
+}
+
+.main {}
+/* 고정 내비게이션 바를 사용할 때는 컨텐츠가 보여질 공간 확보 */
+.main>.content1 {
+    /*브라우저 높이비율에 따라서 보이고 싶을 때 사용(높이에 따른 비율)*/
+    height: 100vh;
+    padding-top: 100px;
+    background-color: aqua;
+}
+.main>.content2 {
+    height: 100vh;
+    background-color: rgb(0, 153, 255);
+}

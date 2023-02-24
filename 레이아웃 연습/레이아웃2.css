@@ -73,3 +73,73 @@ body {
     background-color: #5b7e96;
     padding: 40px;
 }
+
+
+
+/* 강사님 따라하기 */
+.wrap-one {
+    width: 1000px;
+    background-color: #5b7e96;
+    text-align: center; font-size: 2em;
+    color: white;
+    margin: auto;
+    margin-top: 10px;
+}
+
+.header-one {
+    width: 1000px; height: 200px;
+    background-color: #9eb1e6c0;
+    font-size: 4rem; 
+    line-height: 200px; 
+}
+/* nav */
+.nav-one {
+    height: 100px;
+    box-sizing: border-box;
+    padding: 20px 0;
+    background-color: #b0e5e7;
+}
+
+/*main-float 의 내용*/
+.main-float {
+    overflow: auto;
+}
+.main-float>.left-aside {
+    float: left;
+    height: 500px;
+    width: 250px;
+    background-color: #c2fbff;
+}
+.main-float>.right-aside {
+    float: right;
+    height: 500px;
+    width: 250px;
+    background-color: #c2fbff;
+}
+.main-float>.content {
+    margin: 0 250px;
+    height: 500px;
+    background-color: #5b97be;
+}
+
+/* main-grid 의 내용 */
+.main-grid {
+    clear: both;
+    display: grid;
+    grid-template-columns: 250px 500px 250px;
+    height: 500px;
+}
+.main-grid>.left-aside {
+    background-color: #78d5db;
+}
+.main-grid>.content {
+    background-color:#b4e1e9 ;
+} 
+.main-grid>.right-aside {
+    background-color: aqua ;
+}
+
+/* footer */
+.footer {
+    height: 80px;
+}
