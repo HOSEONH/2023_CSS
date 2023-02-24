@@ -1,0 +1,41 @@
+body, ul { padding: 0; margin: 0;}
+ul { list-style: none; }
+a { text-decoration: none; color: black; }
+
+.nav>.gnb {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: cadetblue;
+}
+/* 하위메뉴 숨기기 */
+/* .nav>.gnb .gnb-sub {
+    display: none;
+} */ /*화면 상에서 지움*/
+/* .nav>.gnb .gnb-sub {
+    opacity: 0;
+} */
+
+.nav>.gnb>li:hover .gnb-sub {
+    visibility: visible;
+    opacity: 1;
+    transition: all 1s;
+} 
+
+.nav>.gnb .gnb-sub {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    margin-left: -20px; /*left: 0;모든 하위메뉴가 전부 왼쪽에서*/
+    background-color: rgb(209, 241, 255);
+    padding: 10px 5px;
+}
+
+/* 하위메뉴에 마우스 올렸을 때 전환효과 */
+.nav>.gnb>li>.gnb-sub>li { 
+    box-sizing: border-box; 
+    height: 25px;
+}
+.nav>.gnb>li>.gnb-sub>li:hover {
+    border-bottom: 2px solid blue;
+    transition: all 0.3s;
+}
